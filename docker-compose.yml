@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sharad
+      POSTGRES_PASSWORD: supersecret
+      POSTGRES_DB: curationsdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - curations_net
+
+volumes:
+  postgres_data:
+
+networks:
+  curations_net:
+    driver: bridge
