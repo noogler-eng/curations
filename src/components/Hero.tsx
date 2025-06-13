@@ -15,7 +15,7 @@ export default function Hero() {
 
   return (
     <div
-      className="bg-black h-screen flex items-center justify-center text-white relative"
+      className="bg-black h-screen flex items-center justify-center text-white relative overflow-hidden"
       ref={ref}
     >
       <motion.img
@@ -47,11 +47,11 @@ export default function Hero() {
           src={
             "https://www.curations.club/_next/static/media/clouds.4e9a5288.webp"
           }
-          className="z-10"
+          className="z-10 transform transition-transform duration-300 hover:scale-105"
           width={200}
           height={50}
           animate={{
-            x: [100, -100, 100],
+            x: [300, -300, 300],
           }}
           transition={{
             repeat: Infinity,
@@ -63,7 +63,7 @@ export default function Hero() {
           src={
             "https://www.curations.club/_next/static/media/ytvideos.50ca36d2.webp"
           }
-          className="z-30"
+          className="z-30 transform transition-transform duration-300 hover:scale-105"
           width={270}
           height={100}
           animate={{
@@ -86,7 +86,7 @@ export default function Hero() {
         }
         width={300}
         height={100}
-        className="absolute top-[20.5rem] right-[10rem] z-30"
+        className="absolute top-[20.5rem] right-[10rem] z-30 "
         style={{ x: movieRight }}
         animate={{
           y: [0, -10, 0],
@@ -157,7 +157,7 @@ export default function Hero() {
           ease: "linear",
         }}
       />
-      <h2 className="text-5xl w-3/12 text-center">
+      <h2 className="text-5xl w-3/12 text-center z-50">
         Internet{" "}
         <span className="font-[cursive] font-extrabold">curated by</span> people
         you know
