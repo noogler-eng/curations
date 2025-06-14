@@ -16,7 +16,7 @@ export default function Card({
 }) {
   return (
     <Link href={data.link}>
-      <div className="border p-4 rounded-xl px-6">
+      <div className="border p-4 rounded-xl px-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center">
         <div className="flex flex-col items-center gap-2">
           <Image
             isZoomed

@@ -1,4 +1,6 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
+import HeroList from "@/components/Herolist";
 import Navbar from "@/components/Navbar";
 import Recos from "@/components/recos";
 
@@ -12,6 +14,8 @@ export default function Home() {
         <Hero />
         <div className="mt-25">
           <Recos />
+          <HeroList />
+          <About />
         </div>
       </div>
     </div>
