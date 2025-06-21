@@ -22,7 +22,7 @@ export default function About() {
           <input
             type="text"
             value={searched}
-            onChange={(e: any) => {
+            onChange={(e) => {
               setSearched(e.target.value);
             }}
             className="w-3/4 p-2 px-4 border border-gray-300 rounded-l-full outline-none focus:none"
@@ -46,14 +46,14 @@ export default function About() {
         </h2>
         <img />
         <p>
-          hi! sharad here. we are the founders of curations. if you're someone
+          {`hi! sharad here. we are the founders of curations. if you're someone
           who loves discovering hidden gems through people's recommendations,
           creating lists of your favorite things, and sharing them with the
           world (while keeping it all ✨aesthetic✨), you're in the right place.
           curations started as a way to capture and share what truly matters to
           us, beyond fleeting trends. it's a space to collect, discover, and
           connect over the things that make us, us. we hope you have as much fun
-          using it as we have building it :)
+          using it as we have building it :)`}
         </p>
         <img />
         <div className="flex flex-col items-start justify-center mt-4">
