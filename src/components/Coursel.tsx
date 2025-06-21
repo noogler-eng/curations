@@ -24,7 +24,7 @@ export default function CarouselSize() {
         {Array.from({ length: 10 }).map((_, index) => (
           <CarouselItem
             key={index}
-            className="sm:basis-full md:basis-1/2 lg:basis-1/7"
+            className="sm:basis-full md:basis-1/2 lg:basis-1/5"
           >
             <Card className="max-w-[320px] h-full p-1">
               <CardContent className="p-1 w-full flex flex-col items-start justify-start gap-4">
